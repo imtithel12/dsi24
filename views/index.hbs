@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News List</title>
+    <Link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>New News Every Day</h1>
+        <br><br><br><br><br><br>
+        <a href="/add">Add News</a>
+    </header><br>
+
+    <br><br>
+
+    <ul>
+        {{#each news}}
+        <li><b>{{this.titre}}</b></li>
+        <li>{{this.desc}}</li>
+        <li>{{this.date}}</li>
+        {{/each}}
+    </ul>
+
+
+</body>
+
+</html>
